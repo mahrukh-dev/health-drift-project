@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - run: python train_model.ipynb
+      - run: python train_model.py
       - run: python check_drift.py
       - uses: actions/upload-artifact@v4
         with:
