@@ -17,7 +17,7 @@ Flutter app → FastAPI /predict → RandomForest model
 - Pandas / joblib
 
 ## Model Performance
-- Accuracy: XX% (fill in your number from train_model.py output)
+- Accuracy: The model achieves a 100% F1-score on the test set. However, this is a reflection of the dataset's synthetic nature rather than real-world clinical performance. The dataset contains perfectly structured symptom combinations with zero noise. In a real-world scenario, patient data would be sparse, messy, and have overlapping symptoms, which would drastically reduce accuracy. The focus of this project is not the model's accuracy, but the MLOps architecture (API serving, logging, and drift detection) built around it.
 - Class imbalance handled via class_weight="balanced"
 
 ## API Contract (for Flutter integration)
